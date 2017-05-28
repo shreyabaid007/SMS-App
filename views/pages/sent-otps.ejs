@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/header %>
+</head>
+<body >
+    <h2>Sent OTPs</h2>  
+        <% for(var i=0; i < sentOTP.length; i++) { %>
+            <script>
+            <%= name = sentOTP[i].Name%>
+            <%= time = sentOTP[i].Time%>
+            <%= text = sentOTP[i].Body%>
+            </script>
+                 
+            <%=name%>||
+            <%=time%>||
+            <%=text%><br>
+                   
+        <% } %>      
+</body>
+</html>

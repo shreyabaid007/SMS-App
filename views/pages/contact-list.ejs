@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/header %>
+</head>
+
+<body>
+   <br><br>
+    <% for(var i=0; i < contactList.length; i++) { %>
+        <script>
+            <%= name = contactList[i].Name + " " + contactList[i].Surname%>
+            <%= contact = contactList[i].Contact%>
+        </script>
+                   
+        <ul><a href="/contact-info.ejs?<%=contact%>"><%=name%></a></ul>
+                   
+    <% } %>
+           
+   
+</body>
+</html>

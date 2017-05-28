@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partials/header %>
+</head>
+<body>
+    <%=record.Name + " " + record.Surname%><br>
+    <%=record.Contact%><br><br>
+    <a href="/message-compose.ejs?<%=record.Contact%>">
+        <button>Send Message</button>
+    </a>
+</body>
+</html>

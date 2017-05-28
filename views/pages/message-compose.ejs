@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/header %>
+</head>
+<body>
+   
+    <form method="POST" action="/send-otp">
+    <input type="text" name="contact" value="<%= messageForContact.contact%>" readonly>
+    <input type="text" name="text_message" value="Hi:<%= messageForContact.random%>." readonly>
+    <input type="submit" value="Send">
+    </form>
+
+</body>
+</html>
